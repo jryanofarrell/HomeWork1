@@ -47,13 +47,13 @@ public class PSort extends RecursiveTask <Boolean>{
   
 	public static void parallelSort(int[] A, int begin, int end){
 	  
-		int processors = Runtime . getRuntime ( ).availableProcessors ( );
-		System.out.println("Number of processors : "+ processors );
+		int processors = Runtime.getRuntime().availableProcessors();
+		//System.out.println("Number of processors : "+ processors );
 		PSort f = new PSort (A,begin,end);
 		ForkJoinPool pool = new ForkJoinPool(processors);
 		Boolean result = pool.invoke(f);
-		System.out.println ("Result : " + result );
-		System.out.println(A);
+		//System.out.println ("Result : " + result );
+		//System.out.println(A.toString());
 		}
 
 	

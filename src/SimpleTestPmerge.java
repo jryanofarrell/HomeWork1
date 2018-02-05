@@ -21,7 +21,7 @@ public class SimpleTestPmerge {
 	printArray(B);
     merge(A, B, C);
 
-    PMerge.parallelMerge(A, B, D, 10);
+    PMerge.parallelMerge(A, B, D, 11);
    	
     boolean isSuccess = true;
     for (int i = 0; i < C.length; i++) {
